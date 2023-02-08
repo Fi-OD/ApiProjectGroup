@@ -58,7 +58,9 @@ function getRecipe(recipeName) {
 				// this code accesses the recipe image from the API
 				let recipeImage = recipeResponse.results[0].thumbnail_url;
 				let recipeImageTarget = document.querySelector("#recipeImage");
-				recipeImageTarget.innerHTML = recipeImage;				
+				let newRecipeImage = document.createElement("img");
+				newRecipeImage.src = recipeImage;
+				recipeImageTarget.appendChild = newRecipeImage;				
 				//console.log(recipeImage)
 
 				// this code accesses the number of servings
@@ -110,7 +112,11 @@ function getRecipe(recipeName) {
 				
 				// this code accesses the recipe image from the API
 				let recipeImage = recipeResponse.results[0].recipes[0].thumbnail_url;
-				console.log(recipeImage)
+				let recipeImageTarget = document.querySelector("#recipeImage");
+				let newRecipeImage = document.createElement("img");
+				newRecipeImage.src = recipeImage;
+				recipeImageTarget.appendChild = newRecipeImage;	
+				//console.log(recipeImage)
 
 				// this code accesses the number of servings
 				servingSize = recipeResponse.results[0].recipes[0].num_servings;
