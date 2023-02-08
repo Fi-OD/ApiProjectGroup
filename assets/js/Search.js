@@ -35,31 +35,49 @@ function getRecipe(recipeName) {
 
 				// this code access the recipe name
 				recipeSearchName = recipeResponse.results[0].name;
-				console.log(recipeSearchName)
+				let nameTarget = document.querySelector("#recipeName");
+				nameTarget.innerHTML = recipeSearchName;
+				//console.log(recipeSearchName)
 
 				// this code access the ingredients 
 				for (let index = 0; index < recipeResponse.results[0].sections[0].components.length; index++) {
 					ingredients += ' - ' + recipeResponse.results[0].sections[0].components[index].raw_text + '\n'
 				}
-				console.log(ingredients)
+				let ingredientTarget = document.querySelector("#ingredients");
+				ingredientTarget.innerHTML = ingredients;
+				//console.log(ingredients)
 
 				// this code access the cooking instruction and loops through the length of the instruction array
 				for (let index = 0; index < recipeResponse.results[0].instructions.length; index++) {
 					instruction += 'Step ' + (index + 1) + ' - ' + recipeResponse.results[0].instructions[index].display_text + '\n'
 				}
-				console.log(instruction)
+				let instructionTarget = document.querySelector("#instruction");
+				instructionTarget.innerHTML = instruction;
+				//console.log(instruction)
 
 				// this code accesses the recipe image from the API
 				let recipeImage = recipeResponse.results[0].thumbnail_url;
-				console.log(recipeImage)
+				let recipeImageTarget = document.querySelector("#recipeImage");
+				recipeImageTarget.innerHTML = recipeImage;				
+				//console.log(recipeImage)
 
 				// this code accesses the number of servings
 				servingSize = recipeResponse.results[0].num_servings;
-				console.log("number of servings = " + servingSize)
+				let servingSizeTarget = document.querySelector("#servingSize");
+				servingSizeTarget.innerHTML = servingSize;		
+				//console.log("number of servings = " + servingSize)
 
 				// this code accesses the cooking time (some seem to have this field missing and return null)
 				let recipeMaxTime = recipeResponse.results[0].total_time_minutes
-				console.log(recipeMaxTime)
+				let recipeMaxTimeTarget = document.querySelector("#maxTime");
+				if (recipeResponse.results[0].total_time_minutes === null) {
+				
+					recipeMaxTimeTarget.innerHTML = "1 hour"
+				}
+				else {
+					recipeMaxTimeTarget.innerHTML = recipeMaxTime
+				}
+				//console.log(recipeMaxTime)
 			}
 			// This Else if displays an error message if no results are found
 			else if (recipeResponse.results === [0]) {
@@ -70,30 +88,47 @@ function getRecipe(recipeName) {
 			else {
 				// This code access the name of the recipe
 				recipeSearchName = recipeResponse.results[0].recipes[0].name;
-				console.log(recipeSearchName)
+				let nameTarget = document.querySelector("#recipeName");
+				nameTarget.innerHTML = recipeSearchName;
+				//console.log(recipeSearchName)
 
 				// this code access the ingredients 
 				for (let index = 0; index < recipeResponse.results[0].recipes[0].sections[0].components.length; index++) {
 					ingredients += ' - ' + recipeResponse.results[0].recipes[0].sections[0].components[index].raw_text + '\n'
 				}
-				console.log(ingredients)
+				let ingredientTarget = document.querySelector("#ingredients");
+				ingredientTarget.innerHTML = ingredients;
+				//console.log(ingredients)
 
 				// this code access the cooking instruction and loops through the length of the instruction array
 				for (let i = 0; i < recipeResponse.results[0].recipes[0].instructions.length; i++) {
 					instruction += 'Step ' + (i + 1) + ' - ' + recipeResponse.results[0].recipes[0].instructions[i].display_text + '\n'
 				}
-				console.log(instruction)
+				let instructionTarget = document.querySelector("#instruction");
+				instructionTarget.innerHTML = instruction;
+				//console.log(instruction)
+				
 				// this code accesses the recipe image from the API
 				let recipeImage = recipeResponse.results[0].recipes[0].thumbnail_url;
 				console.log(recipeImage)
 
 				// this code accesses the number of servings
 				servingSize = recipeResponse.results[0].recipes[0].num_servings;
-				console.log("number of servings = " + servingSize)
+				let servingSizeTarget = document.querySelector("#servingSize");
+				servingSizeTarget.innerHTML = servingSize;	
+				//console.log("number of servings = " + servingSize)
 
 				// this code accesses the cooking time (some seem to have this field missing and return null)
 				recipeMaxTime = recipeResponse.results[0].recipes[0].total_time_minutes
-				console.log(recipeMaxTime)
+				let recipeMaxTimeTarget = document.querySelector("#maxTime");
+				if (recipeResponse.results[0].total_time_minutes === null) {
+				
+					recipeMaxTimeTarget.innerHTML = "1 hour"
+				}
+				else {
+					recipeMaxTimeTarget.innerHTML = recipeMaxTime
+				}
+				//console.log(recipeMaxTime)
 			}
 		})
 
