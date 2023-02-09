@@ -53,13 +53,14 @@
           </div>
           <div class="col-md-6">
             <div class="card-body">
-              <h5 class="card-title mt-5" id="recipeName"></h5>
-              <p class="card-text my-3" id="ingredients"></p>
-              <p class="card-text my-3" id="instruction"></p>
-              <p class="card-text my-3" id="servingSize"></p>
-              <p class="card-text mb-5 mt-3" id="maxTime"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <h5 class="card-title mt-5 eng-title" id="recipeName"></h5>
+              <p class="card-text my-3 eng-ingredients" id="ingredients"></p>
+              <p class="card-text my-3 eng-recipe" id="instruction"></p>
+              <p class="card-text my-3 eng-serving" id="servingSize"></p>
+              <p class="card-text mb-5 mt-3 eng-max-time" id="maxTime"><small class="text-muted">Last updated 3 mins ago</small></p>
               
-              <a class="btn btn-lg border mt-5" href="#" role="button" style="background-color: #ffffff; color: grey;">Get Recipe</a>
+              <select id="selector"></select>
+              <button class="btn btn-lg border mt-5" id="translate-button" href="#" role="button" style="background-color: #ffffff; color: grey;">Translate Recipe</button>
 
             </div>
             
@@ -76,6 +77,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/search.js"></script>
+  <script src="assets/js/translate.js"></script>
 </body>
 
 </html>
