@@ -46,7 +46,7 @@ function getRecipe(recipeName) {
 
 				// Access the ingredients 
 				for (let index = 0; index < recipeResponse.results[0].sections[0].components.length; index++) {
-					ingredients += ' - ' + recipeResponse.results[0].sections[0].components[index].raw_text + '\n'
+					ingredients += ' - ' + recipeResponse.results[0].sections[0].components[index].raw_text + '<br>'
 				}
 				let ingredientTarget = document.querySelector("#ingredients");
 				ingredientTarget.innerHTML = ingredients;
@@ -54,7 +54,7 @@ function getRecipe(recipeName) {
 
 				// Access the cooking instructions
 				for (let index = 0; index < recipeResponse.results[0].instructions.length; index++) {
-					instruction += 'Step ' + (index + 1) + ' - ' + recipeResponse.results[0].instructions[index].display_text + '\n'
+					instruction += 'Step ' + (index + 1) + ' - ' + recipeResponse.results[0].instructions[index].display_text + '<br>'
 				}
 				let instructionTarget = document.querySelector("#instruction");
 				instructionTarget.innerHTML = instruction;
@@ -63,15 +63,12 @@ function getRecipe(recipeName) {
 				// Access the recipe image
 				let recipeImage = recipeResponse.results[0].thumbnail_url;
 				let recipeImageTarget = document.querySelector("#recipeImage");
-				let newRecipeImage = document.createElement("img");
-				newRecipeImage.src = recipeImage;
-				recipeImageTarget.appendChild = newRecipeImage;
-				//console.log(recipeImage)
+				recipeImageTarget.innerHTML = `<img src=${recipeImage} />`
 
 				// Access number of servings
 				servingSize = recipeResponse.results[0].num_servings;
 				let servingSizeTarget = document.querySelector("#servingSize");
-				servingSizeTarget.innerHTML = servingSize;
+				servingSizeTarget.innerHTML = "Serving Size: " + servingSize;
 				//console.log("number of servings = " + servingSize)
 
 				// Access the cooking time
@@ -79,12 +76,12 @@ function getRecipe(recipeName) {
 				let recipeMaxTimeTarget = document.querySelector("#maxTime");
 				if (recipeResponse.results[0].total_time_minutes === null) {
 
-					recipeMaxTimeTarget.innerHTML = "1 hour"
+					recipeMaxTimeTarget.textContent = "1 hour"
 				}
 				else {
 					recipeMaxTimeTarget.innerHTML = recipeMaxTime
 				}
-				//console.log(recipeMaxTime)
+				console.log(recipeMaxTime)
 			}
 			// Display an error message if no results are found
 			else if (recipeResponse.results.length === 0) {
@@ -161,7 +158,7 @@ searchBtn.addEventListener("click", function (event) {
 
 // Attaches an event listener to the Random Recipe button to handle click events
 
-randomRecipeBtn.addEventListener("click", function (event) {
+/*randomRecipeBtn.addEventListener("click", function (event) {
 	event.preventDefault();
 
 	// Calls the getRandomObjectFromArray function with the input array as an argument
@@ -228,7 +225,6 @@ randomRecipeBtn.addEventListener("click", function (event) {
 
 	getRecipe(recipeName)
 })
-
 // Save the name of the searched recipes to local storage
 function saveItem(recipeName) {
 	// Get the current array of items from local storage (or an empty array if it doesn't exist)
@@ -245,4 +241,4 @@ function saveItem(recipeName) {
 function getItems() {
 	return JSON.parse(localStorage.getItem("items")) || [];
 }
-
+*/
