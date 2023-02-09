@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="assets/css/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" /> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Home | Bites Across Borders</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="box-shadow: 0 4px 6px -6px #222;">
+        <img src="assets/images/Logo.jpg" class="pl-4 mr-5" href="#">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-5" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active mx-2">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Recipes</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="input-group my-2" style="width: 18%">
+            <input type="text" class="form-control" aria-label="Recipes" placeholder="Search Recipes">
+            <div class="input-group-append">
+              <span class="btn bi-search" style="background-color: #cfcfcf;"></span>
+            </div>
+        </div>
+       
+      </nav>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron row mb-4" style="height: 60vh; background: transparent;">
+        <div class="col-6 ml-5 py-5">
+            <h1 class="display-4 ml-5" style="font-family: 'Abril Fatface'; color: #F8512C;">Bites Across Borders</h1>
+            <p class="lead ml-5 mt-3">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4 ml-5">
+            <p class="pl-5">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-lg ml-5 mt-4 px-4" href="recipes.html" role="button" style="background-color: #F8512C; color: white;">Get Recipe</a>
+        </div>
+        <img src="assets/images/Cooking-Woman.jpg" alt="Woman Cooking" class="col-4 ml-5" style="height: 65vh;">
+    </div>
+
+    <!-- Services Section -->
+    <div class="card py-4 border-0 mx-5 mb-5" style="margin-top: 300px; background-color: #F1EFEF;" >
+        <h3 class="display-5 ml-5 pl-4 mt-3" style="font-family: 'Abril Fatface';">Our Services</h3>
+        <div class="card mx-auto my-4" style="width: 90%;">
+            <div class="card-header">
+              Quote
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
+            </div>
+        </div>
+        <div class="card mx-auto mb-4" style="width: 90%;">
+            <div class="card-header">
+              Quote
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
+            </div>
+        </div>
+        <div class="card mx-auto mb-4" style="width: 90%;">
+            <div class="card-header">
+              Quote
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
+            </div>
+        </div>
+        <a class="btn btn-lg mt-4 px-4 border" href="#" role="button" style="background-color: #ffffff; color: grey; width: 15%; margin-left: 5%;">Get Recipe</a>
+    </div>
+
+    <!-- Meal of the day -->
+    <div class="jumbotron row mb-4" style="height: 60vh; background: transparent;">
+        <img src="assets/images/Cooking-Woman2.jpg" alt="Woman Cooking" class="col-4 ml-5" style="height: 65vh;">
+        <div class="col-6 ml-5 py-5">
+            <h4 class="display-4 ml-5 py-3" style="font-family: 'Abril Fatface'; color: black;">Meal of the day!</h4>
+            <p class="lead ml-5 mt-3">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4 ml-5">
+            <p class="pl-5">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-lg ml-5 mt-4 px-4" href="#" role="button" style="background-color: #cfcfcf; color: white;">Get Recipe</a>
+        </div>
+    </div>
+
+  
+
+
+  <!-- Moment.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
