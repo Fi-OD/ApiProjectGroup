@@ -24,7 +24,7 @@ let languages = [
 ["Japanese", "ja"],
 ["German", "de"],
 ["Punjabi", "pa"],
-["Javanese", "jw"],
+["English", "en"],
 ];
 
 selectorConstruction()
@@ -37,6 +37,7 @@ function translatePage() {
     translate(servingSize)
     translate(maxTime)
     
+    mySet.clear()
 }
 
 
