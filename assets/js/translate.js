@@ -41,7 +41,7 @@ function translateLanguage() {
     for (let i = 0; i < languages.length; i++) {
         const language = languages[i];
         if (language[0] == languageChoice) {
-            languageCode = language[1]      
+            languageCode == language[1]      
         }    
     }
 }
