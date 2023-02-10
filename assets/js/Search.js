@@ -58,12 +58,15 @@ function getRecipe(recipeName) {
 				}
 				let instructionTarget = document.querySelector("#instruction");
 				instructionTarget.innerHTML = instruction;
+				
 				//console.log(instruction)
 
 				// Access the recipe image
 				let recipeImage = recipeResponse.results[0].thumbnail_url;
 				let recipeImageTarget = document.querySelector("#recipeImage");
-				recipeImageTarget.innerHTML = `<img src=${recipeImage} />`
+				recipeImageTarget.innerHTML = `<img src=${recipeImage} width="540px" height="420px"/>`;
+				recipeImageTarget.style.margin = "120px";
+				recipeImageTarget.style.borderRadius = "50px";
 
 				// Access number of servings
 				servingSize = recipeResponse.results[0].num_servings;
@@ -228,17 +231,17 @@ searchBtn.addEventListener("click", function (event) {
 // Save the name of the searched recipes to local storage
 function saveItem(recipeName) {
 	// Get the current array of items from local storage (or an empty array if it doesn't exist)
-	let recipeNames = JSON.parse(localStorage.getItem("items")) || [];
+	let recipeNames = JSON.parse(localStorage.getItem("recipeNames")) || [];
 
 	// Add the new item to the array
 	recipeNames.push(recipeName);
 
 	// Save the updated array to local storage
-	localStorage.setItem("items", JSON.stringify(items));
+	localStorage.setItem("recipeNames", JSON.stringify(recipeNames));
 }
 
 // Retrieve all items from local storage
 function getItems() {
-	return JSON.parse(localStorage.getItem("items")) || [];
+	return JSON.parse(localStorage.getItem("recipeNames")) || [];
 }
 */
