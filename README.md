@@ -9,6 +9,9 @@ The web app provides a platform for users to easily access and cook delicious re
 ![Our Services](assets/images/Our-Services.png)
 ![Contact Form](assets/images/Contact-Us.png)
 ![Recipes](assets/images/Recipes.png)
+![Recipe Selected](assets/images/FishTacoRecipe-%20SpanishSelected.jpg)
+![Recipe translation](assets/images/FishTacoRecipe-%20SpanishTranslated.jpg)
+
 
 
 
@@ -26,14 +29,23 @@ The web app provides a platform for users to easily access and cook delicious re
 [Webpage](https://fi-od.github.io/ApiProjectGroup/)
 [Github](https://github.com/Fi-OD/ApiProjectGroup)
 
-
-## Credits:
-
-This app was developed by [@Emman77240](https://github.com/Emman77240), [@Fi-OD](https://github.com/Fi-OD), [@eliyas4](https://github.com/eliyas4) and [@analupucci](https://github.com/analupucci).
+## Technologies:
 
 - [Tasty API](https://rapidapi.com/apidojo/api/tasty) to query data about recipe, cooking instructions and ingredients. 
 - [text-translate2 API](https://rapidapi.com/dickyagustin/api/text-translator2)  Translate text to 100+ languages.
 - [postmail API](https://postmail.invotes.com/) Contact form. 
+- [Moment.js](https://momentjs.com/)
+- [jQuery](https://jquery.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Jsdelivr](https://www.jsdelivr.com/)
+- CSS
+- Javascript
+- HTML
+
+## Credits:
+
+This app was developed by [@Emman77240](https://github.com/Emman77240), [@Fi-OD](https://github.com/Fi-OD), [@eliyas4](https://github.com/eliyas4) and [@analupucci](https://github.com/analupucci).
 
 
 ## Reference:
