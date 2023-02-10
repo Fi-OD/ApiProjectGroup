@@ -8,8 +8,6 @@ let recipe = document.querySelector(".eng-recipe")
 let servingSize = document.querySelector(".eng-serving")
 let maxTime = document.querySelector(".eng-max-time")
 
-//let englishRecipeIngrediant = document.querySelector(".translate-b")
-
 let languages = [
 ["Mandarin", "zh-CN"],
 ["Hindi", "hi"],
@@ -27,6 +25,7 @@ let languages = [
 ["English", "en"],
 ];
 
+//These are the functions and event listeners
 selectorConstruction()
 translateButton.addEventListener("click", languagePicker)
 translateButton.addEventListener("click", translatePage)
@@ -36,11 +35,7 @@ function translatePage() {
     translate(recipe)
     translate(servingSize)
     translate(maxTime)
-    translateButton.id="hide";
-    scrollOption.id="hide";
-   
 }
-
 
 
 // This bit of code creates the language selector feature.
@@ -68,8 +63,6 @@ function languagePicker() {
 }
 
 // This section of code carries out the translation.
-
-
 function translate(section) {
     const encodedParams = new URLSearchParams();
     encodedParams.append("source_language", "en");
@@ -91,6 +84,9 @@ function translate(section) {
         .then(response => response.json())
         .then(response => section.textContent =(response.data.translatedText))
         .catch(err => console.error(err));  
+    
+    translateButton.id = "hide"
+    scrollOption.id = "hide"
 }
 
 
