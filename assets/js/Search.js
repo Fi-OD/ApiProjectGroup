@@ -231,17 +231,17 @@ searchBtn.addEventListener("click", function (event) {
 // Save the name of the searched recipes to local storage
 function saveItem(recipeName) {
 	// Get the current array of items from local storage (or an empty array if it doesn't exist)
-	let recipeNames = JSON.parse(localStorage.getItem("items")) || [];
+	let recipeNames = JSON.parse(localStorage.getItem("recipeNames")) || [];
 
 	// Add the new item to the array
 	recipeNames.push(recipeName);
 
 	// Save the updated array to local storage
-	localStorage.setItem("items", JSON.stringify(items));
+	localStorage.setItem("recipeNames", JSON.stringify(recipeNames));
 }
 
 // Retrieve all items from local storage
 function getItems() {
-	return JSON.parse(localStorage.getItem("items")) || [];
+	return JSON.parse(localStorage.getItem("recipeNames")) || [];
 }
 */
