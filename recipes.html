@@ -28,12 +28,12 @@
             <li class="nav-item mx-2">
               <a class="nav-link disabled" href="#services" aria-disabled="true">Services</a>
             </li>
-            <li class="nav-item mx-2">
+            <!--<li class="nav-item mx-2">
               <a class="nav-link" href="recipes.html">Recipes</a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="#contact" tabindex="-1">Contact Us</a>
-            </li>
+            </li>-->
           </ul>
         </div>
         <div class="input-group my-2" style="width: 18%">
@@ -45,23 +45,23 @@
        
       </nav>
 
+      
       <!-- Recipes Section -->
-      <div class="card mb-3" style="width: 70%; margin: auto; height: 5vh; border-radius: 12px;">
-        <div class="row no-gutters">
-          <div class="col-md-6" id="recipeImage">
-        <!--  <img  id="recipeImage" src="..." class="card-img" alt="..." style="width: 100%; height: 100%;">-->
+      <div class="card border-0" style="width: 70%; margin: auto; height: 80vh; border-radius: 12px; margin-bottom: 200px;">
+        <div class="no-gutters" style="width: 100%; height: 70%;">
+          <div class="col-md-5" id="recipeImage">
+            <img  id="recipeImage" src="assets/images/beef.png" class="card-img" alt="Food Image" style="width: 100%; height: 100%;">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-7">
             <div class="card-body">
               <h5 class="card-title mt-5 eng-title" id="recipeName"></h5>
               <p class="card-text my-3 eng-ingredients" id="ingredients"></p>
               <p class="card-text my-3 eng-recipe" id="instruction"></p>
               <p class="card-text my-3 eng-serving" id="servingSize"></p>
-              <p class="card-text mb-5 mt-3 eng-max-time" id="maxTime"><small class="text-muted">Last updated 3 mins ago</small></p>
               
-              <select id="selector"></select>
-              <button class="btn btn-lg border mt-5" id="translate-button" href="#" role="button" style="background-color: #ffffff; color: grey;">Translate Recipe</button>
-
+              <select id="selector" class="btn btn-lg" style="border: 1px solid #cfcfcf"></select>
+              <button class="btn btn-lg border ml-3" id="translate-button" href="#" role="button" style="background-color: #ffffff; color: grey;">Translate Recipe</button>
+              
             </div>
             
           </div>
@@ -70,7 +70,8 @@
 
 
       <!-- Footer -->
-    <div class="jumbotron row" id="contact" style="height: 80vh; background: #F1EFEF; padding: 0px; margin-top: 150px; margin-bottom: 0px;">
+      <!--
+    <div class="jumbotron row" id="contact" style="height: 80vh; background: #F1EFEF; padding: 0px; margin-top: 200px; margin-bottom: 0px;">
       <form class="col-6 py-5" style="margin-left: 5%;" id="email_form">
         <h4 class="display-5 mb-4" style="font-family: 'Abril Fatface';">Contact Us</h4>
         <div style="background-color: white; padding: 25px; border-radius: 8px;">
@@ -103,7 +104,7 @@
           <a href="#"><img src="assets/images/Lin.png" style="width: 30px; height: 30px; margin-right: 10px;"></a>
         </div>
       </div>
-  </div>
+  </div>-->
 
  
 
@@ -113,7 +114,7 @@
   <!-- jQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/js/script.js"></script>
-  <script src="assets/js/search.js"></script>
+  <script src="assets/js/Search.js"></script>
   <script src="assets/js/translate.js"></script>
 </body>
 
