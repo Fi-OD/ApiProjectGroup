@@ -160,8 +160,9 @@ searchBtn.addEventListener("click", function (event) {
 	event.preventDefault();
 	recipeName = inputField.value;
 	console.log(recipeName);
-
 	getRecipe(recipeName)
+	translateButton.id = "translate-button"
+	scrollOption.id = "selector"
 
 })
 

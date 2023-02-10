@@ -1,4 +1,6 @@
-
+.hide {
+    display: none;
+}
 
 
 a:link    { color: inherit; text-decoration: none; }

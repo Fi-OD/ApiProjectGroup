@@ -36,6 +36,8 @@ function translatePage() {
     translate(recipe)
     translate(servingSize)
     translate(maxTime)
+    translateButton.id = "hide"
+    scrollOption.id = "hide"
     
    
 }
