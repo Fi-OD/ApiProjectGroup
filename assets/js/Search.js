@@ -162,6 +162,10 @@ searchBtn.addEventListener("click", function (event) {
 	console.log(recipeName);
 
 	getRecipe(recipeName)
+	translateButton.id = "translate-button"
+    scrollOption.id = "selector"
+
+
 
 })
 
@@ -251,3 +255,20 @@ function getItems() {
 	return JSON.parse(localStorage.getItem("recipeNames")) || [];
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
