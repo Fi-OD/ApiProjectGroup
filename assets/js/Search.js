@@ -168,8 +168,11 @@ searchBtn.addEventListener("click", function (event) {
 
 })
 
-// Attaches an event listener to the Random Recipe button to handle click events
+// The following code will be deployed in the future for the Inspire Me - Daily Recipe Inspiration. 
+//Returning a random recipe from the tasty API when the button is clicked
 
+
+// Attaches an event listener to the Random Recipe button to handle click events
 /*randomRecipeBtn.addEventListener("click", function (event) {
 	event.preventDefault();
 
@@ -237,22 +240,6 @@ searchBtn.addEventListener("click", function (event) {
 
 	getRecipe(recipeName)
 })
-// Save the name of the searched recipes to local storage
-function saveItem(recipeName) {
-	// Get the current array of items from local storage (or an empty array if it doesn't exist)
-	let recipeNames = JSON.parse(localStorage.getItem("recipeNames")) || [];
-
-	// Add the new item to the array
-	recipeNames.push(recipeName);
-
-	// Save the updated array to local storage
-	localStorage.setItem("recipeNames", JSON.stringify(recipeNames));
-}
-
-// Retrieve all items from local storage
-function getItems() {
-	return JSON.parse(localStorage.getItem("recipeNames")) || [];
-}
 */
 
 
