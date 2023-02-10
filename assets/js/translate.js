@@ -37,7 +37,7 @@ function translatePage() {
     translate(servingSize)
     translate(maxTime)
     
-    mySet.clear()
+    
 }
 
 
