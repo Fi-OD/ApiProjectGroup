@@ -23,16 +23,16 @@
         <div class="collapse navbar-collapse ml-5" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active mx-2">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link disabled" href="#services" aria-disabled="true">Services</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Recipes</a>
+              <a class="nav-link" href="recipes.html">Recipes</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+              <a class="nav-link" href="#contact" tabindex="-1">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -67,6 +67,43 @@
           </div>
         </div>
       </div>
+
+
+      <!-- Footer -->
+    <div class="jumbotron row" id="contact" style="height: 80vh; background: #F1EFEF; padding: 0px; margin-top: 150px; margin-bottom: 0px;">
+      <form class="col-6 py-5" style="margin-left: 5%;" id="email_form">
+        <h4 class="display-5 mb-4" style="font-family: 'Abril Fatface';">Contact Us</h4>
+        <div style="background-color: white; padding: 25px; border-radius: 8px;">
+          <div class="mb-3">
+            <label for="FormControlInput1" class="form-label" style="color: grey">Email address</label>
+            <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com" style="border: 8px; background-color: #F1EFEF;">
+          </div>
+          <div class="mb-3">
+            <label for="FormControlTextarea1" class="form-label" style="color: grey">Message</label>
+            <textarea class="form-control" id="message" rows="3" style="border: 8px; background-color: #F1EFEF;"></textarea>
+          </div>
+          <button class="btn btn-lg mt-4 px-4" id="emailSubmit" role="button" style="font-weight: 100; background: transparent; font-size: 17px; color: grey; border-radius: 8px; border: 1px solid #cfcfcf;">
+            Submit
+          </button>
+ 
+        </div>
+        
+      </form>
+      
+      <div class="col-4 ml-5 py-5">
+        <h4 class="display-5 mb-4" style="font-family: 'Abril Fatface';">Links</h4>
+        <a href="recipes.html"><p>Recipes</p></a>
+        <a href="#"><p>Navigate To Top</p></a>
+        <a href="#"><p>About</p></a>
+        <h4 class="display-5" style="font-family: 'Abril Fatface'; margin-top: 30%;">Follow Us</h4>
+        <div class="py-3">
+          <a href="#"><img src="assets/images/fb.png" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+          <a href="#"><img src="assets/images/tt.png" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+          <a href="#"><img src="assets/images/in.png" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+          <a href="#"><img src="assets/images/Lin.png" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+        </div>
+      </div>
+  </div>
 
  
 
