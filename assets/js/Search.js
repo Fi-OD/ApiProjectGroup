@@ -3,6 +3,7 @@ let inputField = document.querySelector("#search-input")
 let recipeName = "";
 let searchBtn = document.querySelector("#search-button");
 let randomRecipeBtn = document.querySelector("#random-button")
+let recipeNames = [];
 
 /** The getRecipe Function requests information from the Tasty API for a specified recipe:
 * - Name
@@ -42,6 +43,11 @@ function getRecipe(recipeName) {
 				recipeSearchName = recipeResponse.results[0].name;
 				let nameTarget = document.querySelector("#recipeName");
 				nameTarget.innerHTML = recipeSearchName;
+				// Store the recipe name in the recipeNames array
+				recipeNames.push(recipeSearchName);
+				localStorage.setItem('recipeNames', JSON.stringify(recipeNames));
+				localStorage.getItem('recipeNames');
+			
 				//console.log(recipeSearchName)
 
 				// Access the ingredients 
