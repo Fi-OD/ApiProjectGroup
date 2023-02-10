@@ -124,10 +124,9 @@ function getRecipe(recipeName) {
 
 				// Access the recipe image 
 				let recipeImage = recipeResponse.results[0].recipes[0].thumbnail_url;
-				let recipeImageTarget = document.querySelector("#recipeImage");
-				let newRecipeImage = document.createElement("img");
-				newRecipeImage.src = recipeImage;
-				recipeImageTarget.appendChild = newRecipeImage;
+				$("#recipeImage").attr("src", recipeImage);
+				$("#recipeImage").attr("width", "25%");
+				
 				//console.log(recipeImage)
 
 				// Access the number of servings
