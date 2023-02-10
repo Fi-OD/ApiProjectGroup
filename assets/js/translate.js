@@ -37,7 +37,7 @@ function translatePage() {
     translate(servingSize)
     translate(maxTime)
     
-    mySet.clear()
+   
 }
 
 
@@ -80,7 +80,7 @@ function translate(section) {
         method: 'POST',
         headers: {
             'content-type': 'application/x-www-form-urlencoded',
-            'X-RapidAPI-Key': 'c42de5a747msh94871f1f68806c1p1333a3jsn51bcb01b10c2',
+            'X-RapidAPI-Key': 'd37101c6damshe8992a23840df26p1b1cc6jsn7ac6f7a8a5e0',
             'X-RapidAPI-Host': 'text-translator2.p.rapidapi.com'
         },
         body: encodedParams
