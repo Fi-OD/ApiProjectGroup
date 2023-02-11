@@ -92,11 +92,7 @@ function getRecipe(recipeName) {
 				}
 				console.log(recipeMaxTime)
 			}
-			// Display an error message if no results are found
-			else if (recipeResponse.results.length === 0) {
-				alert("We have not found a recipe match. Please try again.")
-			}
-
+		
 			// If multiple recipes are returned from the search, access its details
 
 			else {
